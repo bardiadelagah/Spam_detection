@@ -1,8 +1,8 @@
 # Spam_detection
 
-An naive basy classifier for email spam detection
+An Naive Bayes classifier for email spam detection
 
-# How it works
+## How it works
 
 The function "readFiles" read all data files from "data" directory.
 
@@ -19,7 +19,7 @@ vectorizer = CountVectorizer()
 counts = vectorizer.fit_transform(data['message'].values)
 ```
 
-Finally, we give the words repeated in each email to the Bayes Naive classifier to model based on the type of email that is spam or not:
+Finally, we give the words repeated in each email to the Naive Bayes classifier to model based on the type of email that is spam or not:
 
 ```python
 classifier = MultinomialNB()
